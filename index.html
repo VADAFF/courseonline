@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educoder - Corsi Online di Tecnologia e Sviluppo</title>
+    <meta name="description" content="Scopri i migliori corsi online di tecnologia su Educoder. Web Development, Full Stack, Social Media Marketing e Cyber Security.">
+    <meta name="keywords" content="corsi online, tecnologia, web development, full stack, social media marketing, cyber security">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #ecf0f1;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav {
+            background: var(--secondary-color);
+            padding: 1rem 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav .nav-links {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .course {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .course:hover {
+            transform: translateY(-5px);
+        }
+        .course-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .course-content {
+            padding: 20px;
+        }
+        .course h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+        .price {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        .about-us {
+            background: white;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Educoder</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Corsi</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Padroneggia la Tecnologia</h2>
+            <p>Scopri i nostri corsi online e diventa un esperto nel tuo campo!</p>
+            <a href="#courses" class="btn">Esplora i Corsi</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="courses">
+            <h2>I Nostri Corsi</h2>
+            <div class="courses-grid">
+                <div class="course">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p>Impara a creare siti web moderni e responsive con HTML, CSS e JavaScript.</p>
+                        <div class="price">€99.99</div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="santivad@outlook.it">
+                            <input type="hidden" name="item_name" value="Corso di Web Development">
+                            <input type="hidden" name="amount" value="99.99">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="return" value="http://tuosito.it">
+                            <input type="hidden" name="cancel_return" value="http://tuosito.it">
+                            <button type="submit" class="btn">Acquista Ora</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Diventa un sviluppatore full stack con Node.js, Express e React.</p>
+                        <div class="price">€149.99</div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="santivad@outlook.it">
+                            <input type="hidden" name="item_name" value="Corso Full Stack Development">
+                            <input type="hidden" name="amount" value="149.99">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="return" value="http://tuosito.it">
+                            <input type="hidden" name="cancel_return" value="http://tuosito.it">
+                            <button type="submit" class="btn">Acquista Ora</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Social Media Marketing</h3>
+                        <p>Impara le strategie di marketing sui social media più efficaci.</p>
+                        <div class="price">€79.99</div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="santivad@outlook.it">
+                            <input type="hidden" name="item_name" value="Corso di Social Media Marketing">
+                            <input type="hidden" name="amount" value="79.99">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="return" value="http://tuosito.it">
+                            <input type="hidden" name="cancel_return" value="http://tuosito.it">
+                            <button type="submit" class="btn">Acquista Ora</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Cyber Security</h3>
+                        <p>Scopri come proteggere sistemi e reti da attacchi informatici.</p>
+                        <div class="price">€129.99</div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="santivad@outlook.it">
+                            <input type="hidden" name="item_name" value="Corso di Cyber Security">
+                            <input type="hidden" name="amount" value="129.99">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="return" value="http://tuosito.it">
+                            <input type="hidden" name="cancel_return" value="http://tuosito.it">
+                            <button type="submit" class="btn">Acquista Ora</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <h2>Chi Siamo</h2>
+            <p>Educoder è una piattaforma di apprendimento online dedicata a fornire corsi di alta qualità nel campo della tecnologia e dello sviluppo. Il nostro team è composto da esperti del settore con anni di esperienza pratica, pronti a condividere le loro conoscenze e competenze con te.</p>
+            <p>La nostra missione è rendere l'apprendimento delle tecnologie più recenti accessibile a tutti, indipendentemente dal background o dall'esperienza precedente. Crediamo che con la giusta guida e dedizione, chiunque possa padroneggiare le competenze necessarie per avere successo nel mondo digitale di oggi.</p>
+            <p>Unisciti a noi e inizia il tuo viaggio verso la padronanza tecnologica!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educoder. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
